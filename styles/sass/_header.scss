@@ -1,18 +1,17 @@
 // ----- HEADER -----
 header {
     background-color: #815600;
-    height: 120vh;
     
     .wrapper {
         width: 90%;
-        max-width: 1200px;
+        max-width: 500px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         
         h1 {
-            font-size: 5.5rem;
+            font-size: 4rem;
             line-height: 70px;
             font-weight: lighter;
             
@@ -24,8 +23,17 @@ header {
     }   
 }
 
-img {
-    width: 500px;
+header img {
+    height: auto;
+    width: 400px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+a   {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* DROPDOWN NAV source code from - https://codepen.io/ngochuynh/pen/yKrvVZ*/
@@ -41,8 +49,8 @@ img {
 .hamburger1 div {
     background-color: white;
     position: relative;
-    width: 50px;
-    height: 5px;
+    width: 40px;
+    height: 4px;
     margin-top: 7px;
     transition: all 0.2s ease-in-out;
 }
@@ -112,7 +120,8 @@ display: none;
     padding: 10px 0;
 }
 
-.link1:hover {
+.link1:hover,
+.link1:focus {
     background-color: #fff;
     color: rgb(61, 61, 61);
     -webkit-transition: all 0.3s ease;

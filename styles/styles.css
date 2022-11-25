@@ -228,11 +228,10 @@ html {
 
 header {
   background-color: #815600;
-  height: 120vh;
 }
 header .wrapper {
   width: 90%;
-  max-width: 1200px;
+  max-width: 500px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,7 +245,7 @@ header .wrapper {
           align-items: flex-end;
 }
 header .wrapper h1 {
-  font-size: 5.5rem;
+  font-size: 4rem;
   line-height: 70px;
   font-weight: lighter;
 }
@@ -255,8 +254,17 @@ header .wrapper h1 span {
   text-align: right;
 }
 
-img {
-  width: 500px;
+header img {
+  height: auto;
+  width: 400px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 /* DROPDOWN NAV source code from - https://codepen.io/ngochuynh/pen/yKrvVZ*/
@@ -272,8 +280,8 @@ img {
 .hamburger1 div {
   background-color: white;
   position: relative;
-  width: 50px;
-  height: 5px;
+  width: 40px;
+  height: 4px;
   margin-top: 7px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -352,7 +360,8 @@ img {
   padding: 10px 0;
 }
 
-.link1:hover {
+.link1:hover,
+.link1:focus {
   background-color: #fff;
   color: rgb(61, 61, 61);
   -webkit-transition: all 0.3s ease;
@@ -362,22 +371,65 @@ img {
 html {
   font-family: "Petit Formal Script", cursive;
   color: white;
-  overflow: hidden;
-  -webkit-overflow-scrolling: touch;
   font-size: 62.5%;
 }
 
-body {
-  overflow: auto;
-  color: #fff;
+.about {
+  background-color: #500801;
+  text-align: center;
+}
+.about .wrapper {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.about .wrapper div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .wrapper div img {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: auto;
+  width: 90vw;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
+.about h2 {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 70px;
+  font-weight: lighter;
+}
+
+.about p {
   font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: 0.2px;
+  line-height: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.p-menu1 {
-  height: 100%;
+.about button {
+  background-color: #1D0303;
+  border: none;
+  color: white;
+  width: 50%;
+  font-family: "Petit Formal Script", cursive;
+  padding: 15px 20px;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.about button:hover, .about button:focus {
+  border: white solid 2px;
 }
