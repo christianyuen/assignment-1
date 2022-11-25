@@ -1,0 +1,42 @@
+// ----- COLLECTION SECTION -----
+
+.collection {
+    background-color: #815600;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    
+    .wrapper {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin: 0;
+            margin-bottom: 40px;
+            font-size: 4rem;
+            line-height: 70px;
+            font-weight: lighter;
+        }
+    }
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 100%;
+        // max-width: 100%;
+        height: auto;
+        margin-bottom: 80px;
+    }
+}
+
+.collection img:first-child {
+    margin-right: 20px;
+}
