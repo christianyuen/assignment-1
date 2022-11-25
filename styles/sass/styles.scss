@@ -1,7 +1,32 @@
-@use'setup';
+@use 'setup';
+@use 'header';
+
+// ----- GENERAL STYLES -----
+html {
+    font-family: 'Petit Formal Script', cursive;
+    color: white;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    font-size: 62.5%;
+}
 
 body {
-    background-color: red;
+    overflow: auto;
+    color: #fff;
 }
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.p-menu1{
+    height: 100%;
+}
+
+
+
+
 
 
