@@ -479,12 +479,6 @@ a {
   margin-right: 20px;
 }
 
-html {
-  font-family: "Petit Formal Script", cursive;
-  color: white;
-  font-size: 62.5%;
-}
-
 .events {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,7 +505,79 @@ html {
   line-height: 70px;
   font-weight: lighter;
 }
-.events .wrapper h2 img {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+
+.trends {
+  background-color: #815600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.trends .wrapper {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.trends .wrapper h2 {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 70px;
+  font-weight: lighter;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: 0.2px;
+  line-height: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.trends button {
+  background-color: #1D0303;
+  border: none;
+  color: white;
+  width: 50%;
+  font-family: "Petit Formal Script", cursive;
+  padding: 15px 20px;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.trends button:hover, .trends button:focus {
+  border: white solid 2px;
+}
+
+html {
+  font-family: "Petit Formal Script", cursive;
+  color: white;
+  font-size: 62.5%;
+}
+
+.full-bleed-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full-bleed-image img {
+  width: 100%;
+  height: 15vh;
 }

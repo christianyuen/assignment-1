@@ -1,0 +1,23 @@
+// ----- EVENTS SECTION -----
+
+.events {
+    display: flex;
+    text-align: center;
+    background-color: #500801;
+    padding: 50px 0;
+
+    .wrapper {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin: 0;
+            font-size: 2.5rem;
+            line-height: 70px;
+            font-weight: lighter;
+        }
+    }
+}

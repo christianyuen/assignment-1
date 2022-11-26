@@ -2,6 +2,8 @@
 @use 'header';
 @use 'about';
 @use 'collection';
+@use 'events';
+@use 'trends';
 
 // ----- GENERAL STYLES -----
 html {
@@ -10,35 +12,14 @@ html {
     font-size: 62.5%;
 }
 
-// ----- EVENTS SECTION -----
+// ----- FULL BLEED IMAGE -----
 
-.events {
+.full-bleed-image {
     display: flex;
-    text-align: center;
-    background-color: #500801;
-    padding: 50px 0;
-
-    .wrapper {
-        width: 90%;
-        max-width: 500px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-
-        h2 {
-            margin: 0;
-            font-size: 2.5rem;
-            line-height: 70px;
-            font-weight: lighter;
-
-            img {
-                // color: white;
-                filter: invert(100%); 
-            }
-        }
-    }
+    justify-content: center;
 }
 
-
-
-
+.full-bleed-image img {
+    width: 100%;
+    height: 15vh;
+}
