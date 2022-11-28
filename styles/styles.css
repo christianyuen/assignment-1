@@ -533,7 +533,8 @@ a {
           flex-direction: column;
 }
 .trends .wrapper h2 {
-  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 0;
   font-size: 4rem;
   line-height: 70px;
   font-weight: lighter;
@@ -562,6 +563,63 @@ p {
   border: white solid 2px;
 }
 
+.sustainability {
+  background-color: #815600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.sustainability .wrapper {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sustainability .wrapper h2 {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 4rem;
+  line-height: 70px;
+  font-weight: lighter;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: 0.2px;
+  line-height: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.sustainability button {
+  background-color: #1D0303;
+  border: none;
+  color: white;
+  width: 50%;
+  font-family: "Petit Formal Script", cursive;
+  padding: 15px 20px;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.sustainability button:hover, .sustainability button:focus {
+  border: white solid 2px;
+}
+
 html {
   font-family: "Petit Formal Script", cursive;
   color: white;
@@ -575,9 +633,10 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 30vh;
 }
 
 .full-bleed-image img {
   width: 100%;
-  height: 15vh;
+  height: auto;
 }
