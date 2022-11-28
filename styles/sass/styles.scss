@@ -5,6 +5,8 @@
 @use 'events';
 @use 'trends';
 @use 'sustainability';
+@use 'contact';
+@use 'footer';
 
 
 // ----- GENERAL STYLES -----
@@ -26,4 +28,7 @@ html {
     width: 100%;
     height: auto;
 }
+
+
+    
 

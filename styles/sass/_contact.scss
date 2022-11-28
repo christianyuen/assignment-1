@@ -1,0 +1,82 @@
+// ----- CONTACT US SECTION -----
+
+.contact {
+    background-color: #500801;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin-top: 40px;
+
+        li {
+            list-style: none;
+
+            a {
+                font-size: 2rem;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+.contact h2 {
+    font-size: 4rem;
+    font-weight: lighter;
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-weight: lighter;
+}
+
+form #email {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    color: grey;
+}
+
+form #submit {
+    background-color: #1D0303;
+    border: none;
+    color: white;
+    width: 50%;
+    font-family: 'Petit Formal Script', cursive;
+    padding: 15px 20px;
+    font-size: 2rem;
+
+    &:hover,
+    &:focus {
+        border: white solid 2px;
+    }
+}
+
+.address p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.address h2 {
+    font-size: 4rem;
+    font-weight: lighter;
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.address {
+    margin-bottom: 30px;
+}
