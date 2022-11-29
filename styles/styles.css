@@ -248,6 +248,7 @@ header .wrapper h1 {
   font-size: 4rem;
   line-height: 70px;
   font-weight: lighter;
+  text-align: right;
 }
 header .wrapper h1 span {
   display: block;
@@ -366,6 +367,16 @@ a {
   color: rgb(61, 61, 61);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.p-menu-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icons {
+  display: none;
 }
 
 .about {
@@ -736,10 +747,182 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 30vh;
 }
 
 .full-bleed-image img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .p-menu1 {
+    display: none;
+  }
+  .desktop-nav {
+    display: block;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  .desktop-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0;
+    list-style: none;
+    font-weight: lighter;
+  }
+  .desktop-nav li {
+    margin-right: 10px;
+  }
+  .desktop-nav a {
+    font-size: 1.7rem;
+  }
+  header .wrapper {
+    width: 85%;
+    max-width: 1400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .flex-container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  header .wrapper h1 {
+    font-size: 6rem;
+    margin-right: 40px;
+  }
+  .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: -40px;
+    bottom: 30px;
+  }
+  .icons ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .icons ul img {
+    height: auto;
+    max-width: 30px;
+    width: 100%;
+    margin: 0;
+  }
+  .about {
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .wrapper {
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  .about .wrapper .container-1 {
+    height: auto;
+    width: 25vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 50px;
+  }
+  .about img {
+    width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about .wrapper .container-2 {
+    height: auto;
+    width: 75vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 50px;
+  }
+  .about p {
+    margin-top: 0;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 25px;
+    font-weight: lighter;
+  }
+  .about h2 {
+    margin-bottom: 0;
+    padding: 0;
+  }
 }
